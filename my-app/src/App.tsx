@@ -7,7 +7,6 @@ function App() {
     <div >
     <button style={{backgroundColor: 'red'}}>Change to blue</button>
     </div>
-
   );
 }
 
