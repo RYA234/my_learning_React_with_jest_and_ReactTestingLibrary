@@ -8,7 +8,7 @@ test('button has correct initial color', () => {
     // find an element with a role of button and text of 'Change to blue'
    const colorButton = screen.getByRole('button',{ name:'Change to blue' });
 
-   //　赤色の色があることを確認
+   //　ボタンの初期色が赤色であることを確認
     expect(colorButton).toHaveStyle({backgroundColor: 'red'})
 });
 
