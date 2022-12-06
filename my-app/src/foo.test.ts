@@ -8,7 +8,7 @@ test('basic again', () => {
   expect(sum(1, 2)).toBe(3);
 });
 
-test('basic error Pattern', () => {
-    expect(sum(1, 2)).toBe(4);
+test('basic success Pattern', () => {
+    expect(sum(1, 2)).toBe(3);
   }
 );
