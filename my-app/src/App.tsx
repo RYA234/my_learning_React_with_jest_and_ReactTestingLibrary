@@ -18,15 +18,7 @@ function App() {
 		Change to {newButtonColor}
 	</button>
 		{/* <input type ="checkbox"  checked={true}/> */}
-		<br></br>
-			<input 
-			type ="checkbox"
-			id="disable-button-checkbox-two"
-			defaultChecked = {disabledSecond}
-			onChange={(e) => setDisabledSecond(e.target.checked)} 
-			/>
-			<label htmlFor="disable-button-checkbox-two">Disable button</label>
-			
+	
 		<br></br>
 		<input 
 			type ="checkbox"
@@ -36,7 +28,15 @@ function App() {
 			/>
 			<label htmlFor="disable-button-checkbox">Disable button</label>
 		
-			
+		<br></br>
+		<input 
+		type ="checkbox"
+		id="disable-button-checkbox-two"
+		defaultChecked = {disabledSecond}
+		onChange={(e) => setDisabledSecond(e.target.checked)} 
+		/>
+		<label htmlFor="disable-button-checkbox-two">Disable button</label>
+	
 
 
 		</div>
