@@ -32,14 +32,28 @@ test('button has correct initial color', () => {
 
 });
 
-test('initial conditions', () => {
+// test('initial conditions', () => {
+// 	render(<App />);
+// 	const colorButton = screen.getByRole('button', {name: 'Change to blue'})
+
+// 	expect(colorButton).toBeEnabled();
+
+// 	const checkbox = screen.getByRole('checkbox');
+// 	expect(checkbox).not.toBeChecked();
+
+
+// });
+
+test('Checkbox disable button on first click and enables on second click',()=>{
 	render(<App />);
-	const colorButton = screen.getByRole('button', {name: 'Change to blue'})
+	//　使うタイミング　複数チェックボックスがあるときに使えそう
+	const checkbox = screen.getAllByRole('checkbox',{name: 'Disable button'});
 
-	expect(colorButton).toBeEnabled();
+	const colorbutton = screen.getByRole('button',{name: 'Change to blue'});
 
-	const checkbox = screen.getByRole('checkbox');
-	expect(checkbox).not.toBeChecked();
+	fireEvent.click(checkbox[0]);
+	expect(colorbutton).toBeDisabled();
 
-
-})
+	fireEvent.click(checkbox[0]);
+	expect(colorbutton).toBeEnabled();
+});
