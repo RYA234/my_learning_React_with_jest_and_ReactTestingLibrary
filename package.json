@@ -1,5 +1,11 @@
 {
   "devDependencies": {
     "@testing-library/react": "^13.4.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "eslint-plugin-jest-dom": "^4.0.3",
+    "eslint-plugin-testing-library": "^5.9.1",
+    "react-bootstrap": "^2.7.0"
   }
 }
